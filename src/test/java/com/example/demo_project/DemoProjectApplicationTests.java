@@ -11,7 +11,7 @@ import com.example.demo_project.service.ifs.PersonService;
 import com.example.demo_project.service.impl.ActiveImpl;
 
 @SpringBootTest
-class DemoProjectApplicationTests { // 執行是點 JUnit test
+class DemoProjectApplicationTests { // 執行是點 Unit test
 
 	@Autowired
 	private PersonService personService;
@@ -36,7 +36,7 @@ class DemoProjectApplicationTests { // 執行是點 JUnit test
 	}
 	
 	@Test
-	public void activeTest() {  //
+	public void activeTest() {  
 		Bird bird = active.fly("Bird", 20);
 		active.printbird(bird);
 	}
